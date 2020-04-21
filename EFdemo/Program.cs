@@ -117,11 +117,16 @@ namespace EFdemo
             //协变 。 把一个子类的泛型集合赋值给父类的泛型集合，外边用的时候 用父类泛型；
 
 
+            #region 协变，逆变
             Func<int, bool> delFunc;
 
-            Func<object, bool> delParent = a => { Console.WriteLine(a.ToString());
-                                                    return true; };
+            Func<object, bool> delParent = a =>
+            {
+                Console.WriteLine(a.ToString());
+                return true;
+            };
 
+            #endregion
 
 
 
